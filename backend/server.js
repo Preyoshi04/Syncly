@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === "production") {
   });
 } else {
   // Simple test route for development
-  app.get("/.*/", (req, res) => {
+  app.get("*", (req, res) => {
     res.send("API is running...");
   });
 }
